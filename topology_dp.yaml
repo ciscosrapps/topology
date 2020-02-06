@@ -21,15 +21,15 @@ spec:
         args:
           - topology
           - --arango-url
-          - http://arangodb.jalapeno.svc.cluster.local:8529
+          - http://arangodb.voltron.svc.cluster.local:8529
           - --arango-user
           - root
           - --arango-password
-          - jalapeno
+          - voltron
           - --arango-database
-          - jalapeno
+          - voltron
           - --kafka-consumer-group
-          - jalapeno_framework_kube
+          - voltron_framework_kube
           - --kafka-topics
           - "openbmp.parsed.router,openbmp.parsed.peer,openbmp.parsed.unicast_prefix,openbmp.parsed.ls_link,openbmp.parsed.ls_node,openbmp.parsed.ls_prefix,openbmp.parsed.l3vpn,openbmp.parsed.evpn"
           - --kafka-brokers
